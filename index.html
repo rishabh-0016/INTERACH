@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERACH - Your Gateway to Tech Excellence</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h2>INTERACH</h2>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#dsa" class="nav__link">DSA</a></li>
+                    <li class="nav__item"><a href="#programming" class="nav__link">Programming</a></li>
+                    <li class="nav__item"><a href="#webdev" class="nav__link">Web Dev</a></li>
+                    <li class="nav__item"><a href="#database" class="nav__link">Database</a></li>
+                    <li class="nav__item"><a href="#systemdesign" class="nav__link">System Design</a></li>
+                    <li class="nav__item"><a href="#algorithms" class="nav__link">Algorithms</a></li>
+                    <li class="nav__item"><a href="#ml" class="nav__link">ML</a></li>
+                    <li class="nav__item"><a href="#interview" class="nav__link">Interview Prep</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__actions">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search topics...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <button class="btn btn--outline btn--sm" id="login-btn">Login</button>
+                <button class="btn btn--primary btn--sm" id="signup-btn">Sign Up</button>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">Welcome to INTERACH</h1>
+                <p class="hero__subtitle">Your Gateway to Tech Excellence</p>
+                <p class="hero__description">A comprehensive learning platform for programming, algorithms, and technology education. Master the skills that matter most in today's tech world.</p>
+                <div class="hero__actions">
+                    <button class="btn btn--primary btn--lg">Start Learning</button>
+                    <button class="btn btn--outline btn--lg">Explore Courses</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Study Materials Section -->
+    <section class="study-materials" id="courses">
+        <div class="container">
+            <h2 class="section__title">Study Materials</h2>
+            <p class="section__subtitle">Comprehensive learning resources across all technology domains</p>
+            
+            <div class="materials-grid">
+                <div class="material-card" data-category="DSA">
+                    <div class="card__icon">🔢</div>
+                    <h3 class="card__title">Data Structures & Algorithms</h3>
+                    <p class="card__description">Master fundamental data structures and algorithmic thinking. Learn arrays, linked lists, trees, graphs, and essential algorithms for coding interviews.</p>
+                    <div class="card__topics">
+                        <span class="topic-tag">Arrays</span>
+                        <span class="topic-tag">Trees</span>
+                        <span class="topic-tag">Graphs</span>
+                        <span class="topic-tag">Sorting</span>
+                    </div>
+                    <button class="btn btn--primary btn--sm card__button">Learn More</button>
+                </div>
+
+                <div class="material-card" data-category="Programming">
+                    <div class="card__icon">🐍</div>
+                    <h3 class="card__title">Python Programming</h3>
+                    <p class="card__description">Complete Python programming from basics to advanced concepts. Perfect for beginners and experienced programmers alike.</p>
+                    <div class="card__topics">
+                        <span class="topic-tag">Syntax</span>
+                        <span class="topic-tag">OOP</span>
+                        <span class="topic-tag">Django</span>
+                        <span class="topic-tag">Data Analysis</span>
+                    </div>
+                    <button class="btn btn--primary btn--sm card__button">Learn More</button>
+                </div>
+
+                <div class="material-card" data-category="Programming">
+                    <div class="card__icon">☕</div>
+                    <h3 class="card__title">Java Programming</h3>
+                    <p class="card__description">Comprehensive Java programming guide covering core concepts, OOP principles, and enterprise development patterns.</p>
+                    <div class="card__topics">
+                        <span class="topic-tag">Core Java</span>
+                        <span class="topic-tag">Collections</span>
+                        <span class="topic-tag">Spring</span>
+                        <span class="topic-tag">Hibernate</span>
+                    </div>
+                    <button class="btn btn--primary btn--sm card__button">Learn More</button>
+                </div>
+
+                <div class="material-card" data-category="Web Dev">
+                    <div class="card__icon">⚛️</div>
+                    <h3 class="card__title">JavaScript & React</h3>
+                    <p class="card__description">Modern JavaScript and React development. Build interactive web applications with the latest frontend technologies.</p>
+                    <div class="card__topics">
+                        <span class="topic-tag">ES6+</span>
+                        <span class="topic-tag">React</span>
+                        <span class="topic-tag">Node.js</span>
+                        <span class="topic-tag">Express</span>
+                    </div>
+                    <button class="btn btn--primary btn--sm card__button">Learn More</button>
+                </div>
+
+                <div class="material-card" data-category="Database">
+                    <div class="card__icon">🗄️</div>
+                    <h3 class="card__title">Database Management</h3>
+                    <p class="card__description">SQL and NoSQL database concepts, design patterns, and optimization techniques for efficient data storage.</p>
+                    <div class="card__topics">
+                        <span class="topic-tag">SQL</span>
+                        <span class="topic-tag">MySQL</span>
+                        <span class="topic-tag">MongoDB</span>
+                        <span class="topic-tag">Optimization</span>
+                    </div>
+                    <button class="btn btn--primary btn--sm card__button">Learn More</button>
+                </div>
+
+                <div class="material-card" data-category="System Design">
+                    <div class="card__icon">🏗️</div>
+                    <h3 class="card__title">System Design</h3>
+                    <p class="card__description">Learn to design scalable systems. Understand architecture patterns, microservices, and distributed systems.</p>
+                    <div class="card__topics">
+                        <span class="topic-tag">Scalability</span>
+                        <span class="topic-tag">Microservices</span>
+                        <span class="topic-tag">Load Balancing</span>
+                        <span class="topic-tag">Caching</span>
+                    </div>
+                    <button class="btn btn--primary btn--sm card__button">Learn More</button>
+                </div>
+
+                <div class="material-card" data-category="ML">
+                    <div class="card__icon">🤖</div>
+                    <h3 class="card__title">Machine Learning</h3>
+                    <p class="card__description">Introduction to machine learning concepts, algorithms, and practical implementations using Python libraries.</p>
+                    <div class="card__topics">
+                        <span class="topic-tag">Supervised Learning</span>
+                        <span class="topic-tag">Neural Networks</span>
+                        <span class="topic-tag">TensorFlow</span>
+                        <span class="topic-tag">Scikit-learn</span>
+                    </div>
+                    <button class="btn btn--primary btn--sm card__button">Learn More</button>
+                </div>
+
+                <div class="material-card" data-category="Interview Prep">
+                    <div class="card__icon">🏆</div>
+                    <h3 class="card__title">Competitive Programming</h3>
+                    <p class="card__description">Enhance problem-solving skills for coding competitions and technical interviews with advanced algorithmic challenges.</p>
+                    <div class="card__topics">
+                        <span class="topic-tag">Dynamic Programming</span>
+                        <span class="topic-tag">Graph Algorithms</span>
+                        <span class="topic-tag">Number Theory</span>
+                        <span class="topic-tag">Contest Strategies</span>
+                    </div>
+                    <button class="btn btn--primary btn--sm card__button">Learn More</button>
+                </div>
+
+                <div class="material-card" data-category="Web Dev">
+                    <div class="card__icon">🌐</div>
+                    <h3 class="card__title">Web Development Fundamentals</h3>
+                    <p class="card__description">Complete web development course covering HTML, CSS, JavaScript, and modern web development practices.</p>
+                    <div class="card__topics">
+                        <span class="topic-tag">HTML5</span>
+                        <span class="topic-tag">CSS3</span>
+                        <span class="topic-tag">Responsive Design</span>
+                        <span class="topic-tag">Web APIs</span>
+                    </div>
+                    <button class="btn btn--primary btn--sm card__button">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Topics Section -->
+    <section class="featured-topics">
+        <div class="container">
+            <h2 class="section__title">Featured Topics</h2>
+            <div class="featured-grid">
+                <div class="featured-card trending">
+                    <div class="featured-badge">
+                        <i class="fas fa-fire"></i>
+                        Trending
+                    </div>
+                    <h3>160 Days of DSA</h3>
+                    <p>Master Data Structures and Algorithms in 160 days with structured learning path</p>
+                    <button class="btn btn--outline btn--sm">Get Started</button>
+                </div>
+                <div class="featured-card trending">
+                    <div class="featured-badge">
+                        <i class="fas fa-fire"></i>
+                        Trending
+                    </div>
+                    <h3>System Design Interview Prep</h3>
+                    <p>Complete guide to ace system design interviews at top tech companies</p>
+                    <button class="btn btn--outline btn--sm">Get Started</button>
+                </div>
+                <div class="featured-card">
+                    <h3>Full Stack Web Development</h3>
+                    <p>Become a full-stack developer with our comprehensive MERN stack course</p>
+                    <button class="btn btn--outline btn--sm">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>INTERACH</h3>
+                    <p>Your Gateway to Tech Excellence. A comprehensive learning platform for programming, algorithms, and technology education.</p>
+                </div>
+                <div class="footer__section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#practice">Practice Problems</a></li>
+                        <li><a href="#interview-guide">Interview Guide</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Categories</h4>
+                    <ul class="footer__links">
+                        <li><a href="#dsa">DSA</a></li>
+                        <li><a href="#programming">Programming</a></li>
+                        <li><a href="#webdev">Web Development</a></li>
+                        <li><a href="#database">Database</a></li>
+                        <li><a href="#systemdesign">System Design</a></li>
+                        <li><a href="#ml">Machine Learning</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 INTERACH. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal hidden" id="login-modal">
+        <div class="modal__overlay" id="login-overlay"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3>Login to INTERACH</h3>
+                <button class="modal__close" id="login-close">&times;</button>
+            </div>
+            <form class="modal__form" id="login-form">
+                <div class="form-group">
+                    <label class="form-label" for="login-email">Email or Username</label>
+                    <input type="text" class="form-control" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="login-password">Password</label>
+                    <input type="password" class="form-control" id="login-password" required>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="remember-me"> Remember Me
+                    </label>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full-width">Login</button>
+                <div class="form-links">
+                    <a href="#" id="forgot-password">Forgot Password?</a>
+                    <span>Don't have an account? <a href="#" id="switch-to-signup">Sign Up</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal hidden" id="signup-modal">
+        <div class="modal__overlay" id="signup-overlay"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3>Join INTERACH</h3>
+                <button class="modal__close" id="signup-close">&times;</button>
+            </div>
+            <form class="modal__form" id="signup-form">
+                <div class="form-group">
+                    <label class="form-label" for="signup-name">Full Name</label>
+                    <input type="text" class="form-control" id="signup-name" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="signup-email">Email Address</label>
+                    <input type="email" class="form-control" id="signup-email" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="signup-password">Password</label>
+                    <input type="password" class="form-control" id="signup-password" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="confirm-password">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirm-password" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="user-role">User Role</label>
+                    <select class="form-control" id="user-role">
+                        <option value="student">Student</option>
+                        <option value="professional">Professional</option>
+                        <option value="educator">Educator</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="terms-agreement" required> I agree to the Terms & Conditions
+                    </label>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full-width">Create Account</button>
+                <div class="form-links">
+                    <span>Already have an account? <a href="#" id="switch-to-login">Login</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
